@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anant's Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+        }
+        .service-card {
+            background-color: #1a1a1a;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .text-emerald-500-gradient {
+            background-image: linear-gradient(90deg, #34D399, #10B981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 lg:p-12 flex flex-col justify-start items-center min-h-screen">
+
+    <!-- This is the navigation bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-70 backdrop-blur-md p-4 flex justify-between items-center shadow-lg">
+        <div class="text-xl font-bold text-white">
+            Portfolio<span class="text-emerald-500">.</span>
+        </div>
+        <div class="flex gap-6">
+            <a href="Untitled1.html" class="text-gray-400 hover:text-emerald-500 transition-colors duration-300 font-medium">Home</a>
+            <a href="about.html" class="text-gray-400 hover:text-emerald-500 transition-colors duration-300 font-medium">About</a>
+            <a href="b.html" class="text-gray-400 hover:text-emerald-500 transition-colors duration-300 font-medium">Portfolio</a>
+            <a href="c.html" class="text-white hover:text-emerald-500 transition-colors duration-300 font-medium">Service</a>
+            <a href="a.html" class="text-gray-400 hover:text-emerald-500 transition-colors duration-300 font-medium">Contact</a>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto mt-24 text-center">
+        <h2 class="text-5xl sm:text-6xl font-bold mb-4">What I Do</h2>
+        <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-16">I provide high-quality and professional services in web development, design, and content creation. My goal is to help you build a strong online presence and achieve your business goals.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service Card 1: Web Development -->
+            <div class="service-card flex flex-col items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-emerald-500 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/>
+                    <path d="M13 3l-2 18"/>
+                </svg>
+                <h3 class="text-3xl font-semibold mb-2 text-emerald-500-gradient">Web Development</h3>
+                <p class="text-center text-gray-400">I build responsive, modern, and user-friendly websites from scratch using the latest web technologies. I specialize in both front-end and back-end development.</p>
+            </div>
+
+            <!-- Service Card 2: UI/UX Design -->
+            <div class="service-card flex flex-col items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-emerald-500 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/>
+                    <path d="M12 10V4"/>
+                    <path d="M16.24 7.76l-2.83 2.83"/>
+                    <path d="M18 12h-6"/>
+                    <path d="M16.24 16.24l-2.83-2.83"/>
+                </svg>
+                <h3 class="text-3xl font-semibold mb-2 text-emerald-500-gradient">UI/UX Design</h3>
+                <p class="text-center text-gray-400">I craft intuitive and beautiful user interfaces that provide an exceptional user experience. My designs are clean, functional, and visually appealing.</p>
+            </div>
+
+            <!-- Service Card 3: Content Creation -->
+            <div class="service-card flex flex-col items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-emerald-500 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H4a2 2 0 00-2 2v16a2 2 0 002 2z"/>
+                    <path d="M8 6h8M8 10h8M8 14h8M8 18h8"/>
+                </svg>
+                <h3 class="text-3xl font-semibold mb-2 text-emerald-500-gradient">Content Creation</h3>
+                <p class="text-center text-gray-400">I produce engaging and high-quality written content for blogs, websites, and social media. I focus on creating content that resonates with your target audience.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
